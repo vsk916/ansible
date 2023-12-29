@@ -9,4 +9,14 @@
     private: false
   vars_files:
   - variables.yaml
-  
+  vars:
+    Name: vamsi from play
+    wishes: morning from play
+  tasks:
+  - name: variable check
+    vars:
+      Name: vamsi from play
+      wishes: morning from play
+    ansible.builtin.debug:
+      msg: "Hi {{Name}}, good {{wishes}}"
+

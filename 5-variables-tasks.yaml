@@ -9,6 +9,6 @@
   tasks:
   - name: writing a line
     vars:
-    Trainer: vishnu
+      Trainer: vishnu
     ansible.builtin.debug:
       msg: "{{Name}} learning devops, trainer is {{Trainer}} with duriation {{duration}} HRS"

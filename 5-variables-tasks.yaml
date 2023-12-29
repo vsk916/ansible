@@ -1,0 +1,14 @@
+# Task level variables
+
+- name: variables at play level
+  hosts: localhost
+  vars: 
+    Name: vamsi
+    Trainer: sivakumar
+    duration: 110
+  tasks:
+  - name: writing a line
+    vars:
+    Trainer: vishnu
+    ansible.builtin.debug:
+      msg: "{{Name}} learning devops, trainer is {{Trainer}} with duriation {{duration}} HRS"

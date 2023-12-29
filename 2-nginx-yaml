@@ -3,10 +3,10 @@
   become: yes #it will get root access
   tasks:
   - name: install nginx package
-   ansible.builtin.package:
+    ansible.builtin.package:
       name: nginix
       state: present
   - name: run nginx
-   ansible.builtin.service:
+    ansible.builtin.service:
       name: nginx
       state: started

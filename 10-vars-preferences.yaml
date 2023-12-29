@@ -1,5 +1,5 @@
 - name: variable preferences
-  host: localhost
+  hosts: localhost
   vars_prompt:
   - name: Name
     prompt: Please provide your name

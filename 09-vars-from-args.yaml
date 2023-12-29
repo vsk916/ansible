@@ -1,0 +1,6 @@
+- name: variables form args
+  hosts: localhost
+  tasks:
+  - name: check variable
+    ansible.builtin.debug:
+      msg: "Hello {{name}}, good {{wishes}}"

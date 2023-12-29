@@ -1,0 +1,12 @@
+- name: variable preferences
+  host: localhost
+  vars_prompt:
+  - name: Name
+    prompt: Please provide your name
+    private: false
+  - name: wishes
+    prompt: Please give your wishes
+    private: false
+  vars_files:
+  - variables.yaml
+  

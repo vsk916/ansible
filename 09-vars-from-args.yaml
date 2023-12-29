@@ -4,3 +4,7 @@
   - name: check variable
     ansible.builtin.debug:
       msg: "Hello {{Name}}, good {{wishes}}"
+
+
+#Below command is used to give the variable through arguments
+#ansible-playbook -i inventory.ini -e ansible_user=centos -e ansible_password=DevOps321 -e "Name=vamsi" -e "wishes=morning" 09-vars-from-args.yaml

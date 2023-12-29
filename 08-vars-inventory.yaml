@@ -1,0 +1,6 @@
+- name: variables from inventory
+  host: localhost
+  tasks:
+  - name: need to check variables from inventory
+    ansible.builtin.debug
+      msg: "Hi {{Name}}, good {{wishes}}"

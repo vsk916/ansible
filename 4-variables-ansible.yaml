@@ -7,4 +7,4 @@
   tasks:
   - name: writing a line
     ansible.builtin.debug:
-      msg: "{{Name}} learning devops, trainer is {{Trainer}} with duriation {{duration}}"
+      msg: "{{Name}} learning devops, trainer is {{Trainer}} with duriation {{duration}} HRS"

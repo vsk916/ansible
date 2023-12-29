@@ -1,5 +1,6 @@
 - name: need to check roboshop user exit or not, if not exit need to create
   hosts: localhost
+  become: yes
   tasks:
   - name: need to check roboshop user exit or not
     ansible.builtin.command: id roboshop

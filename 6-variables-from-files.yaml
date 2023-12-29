@@ -1,0 +1,10 @@
+#Variables for file
+
+- name: variables at play level
+  hosts: localhost
+  vars_files: 
+  - variables.yaml
+  tasks:
+  - name: writing a line
+    ansible.builtin.debug:
+      msg: "{{Name}} learning devops, trainer is {{Trainer}} with duriation {{duration}} HRS"

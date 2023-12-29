@@ -1,0 +1,20 @@
+- name: need to check roboshop user exit or not, if not exit need to create
+  hosts: localhost
+  tasks:
+  - name: need to check roboshop user exit or not
+    ansible.builtin.command: id roboshop
+    register: user # user is a variable, the result of above module will be stored in the user variable
+    ignore_errors: true #ansible will not exit even it got error
+
+  - name: print user output value
+    ansible.builtin.debug:
+      msg: "user output is {{user}}"
+
+  - name: print exit status or return code
+    ansible.builtin.debug:
+      msg: "Status is : {{user.rc}}"
+  
+  - name: create user
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0

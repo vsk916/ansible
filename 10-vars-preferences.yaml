@@ -15,12 +15,12 @@
   tasks:
   - name: variable check
     vars:
-      Name: vamsi from tasks
-      wishes: morning from tasks
+      # Name: vamsi from tasks
+      # wishes: morning from tasks
     ansible.builtin.debug:
       msg: "Hi {{Name}}, good {{wishes}}"
 
 
 #1 - args
-#2 - play
+#2 - tasks
 

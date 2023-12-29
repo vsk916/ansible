@@ -5,7 +5,7 @@
     prompt: Please enter the user name
     private: false #user can see what they entering
   - name: PASSWORD
-    PROMPT: please enter the password
+    prompt: please enter the password
     private: true #user can't see what they entering
   tasks:
     name: print the variables

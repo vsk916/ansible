@@ -21,12 +21,13 @@
       msg: "Hi {{Name}}, good {{wishes}}"
 
 
-#1 - args
+#1 - CMD
 #2 - tasks
 #3 - file
 #4 - prompt
 #5 - play
 #6 - inventory
+#7 - roles which will cover later 
 
 
 

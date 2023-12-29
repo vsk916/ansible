@@ -18,7 +18,7 @@
     ansible.builtin.debug:
       msg: "Name: {{Name}}"
   - name: print list
-   ansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "Skils: {{Skills}}"
   - name: print map type
     ansible.builtin.debug:

@@ -7,8 +7,8 @@
   - name: wishes
     prompt: Please give your wishes
     private: false
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars:
     Name: vamsi from play
     wishes: morning from play
@@ -23,4 +23,6 @@
 
 #1 - args
 #2 - tasks
+#3 - file
+
 

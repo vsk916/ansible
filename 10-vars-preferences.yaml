@@ -9,9 +9,9 @@
   #   private: false
   # vars_files:
   # - variables.yaml
-  vars:
-    Name: vamsi from play
-    wishes: morning from play
+  # vars:
+  #   Name: vamsi from play
+  #   wishes: morning from play
   tasks:
   - name: variable check
     vars:
@@ -25,6 +25,8 @@
 #2 - tasks
 #3 - file
 #4 - prompt
+#5 - play
+#6 - inventory
 
 
 

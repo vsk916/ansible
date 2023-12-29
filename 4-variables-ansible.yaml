@@ -1,0 +1,10 @@
+- name: variables at play level
+  hosts: localhost
+  vars: 
+    Name: vamsi
+    Trainer: sivakumar
+    duration: 110
+  tasks:
+  - name: writing a line
+    ansible.builtin.debug:
+      msg: "{{name}} learning devops, trainer is {{trainer}} with duriation {{duration}}"
